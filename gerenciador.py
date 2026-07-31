@@ -2,7 +2,6 @@ import random
 import time
 # A lista de senhas
 randoms = ['123456789', '987654321', '1029384756']
-escolhaale = random.choice(randoms)
 senhas = {}
 print("Olá! Criei um projeto onde você pode salvar todas as suas senhas em um só lugar! Além disso, você também poderá adicionar, editar ou remover senhas.")
 time.sleep(3)
@@ -29,6 +28,7 @@ while True:
     print("Abaixo está a sua lista atual de senhas")
     print(senhas)
 
+    escolhaale = random.choice(randoms)
     ale = input("Você deseja que uma senha aleatória seja criada?")
     if ale == "sim":
         nome = input("Qual o nome você quer dar a sua senha?")
